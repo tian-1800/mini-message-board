@@ -1,10 +1,13 @@
-h1 Add New Message 
-form(method="POST" action="/new")
-    div
-    label Text:
-    input(type="text" name="messageText" required="required")
-    div
-    label Author:
-    input(label="User" type="text" name="messageUser" required="required")
-    div
-    button(type="submit") Submit
+extends layout
+
+block content
+    h1 Add New Message 
+    form(method="POST" action="/new")
+        div
+            label Text: 
+            input(type="text" name="messageText" required="required")
+        div
+            label Author: 
+            input(label="User" type="text" name="messageUser" required="required")
+        div
+            button(type="submit") Submit

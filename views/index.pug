@@ -2,7 +2,11 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title} #{title}
+  p Welcome to #{title}
   a(href="/new") New message
+  ul
   each message in messages
-    div #{message.text} by #{message.user} at #{message.added}
+    li
+      p Text: #{message.text} 
+      p Author: #{message.user}
+      p Time added: #{message.added}
